@@ -40,17 +40,28 @@
 
     <!-- ======= Top Bar ======= -->
     <div id="topbar" class="d-flex align-items-center fixed-top">
-        <div class="container d-flex">
-            <div class="contact-info d-flex">
-                <i class="bi bi-phone d-flex"><span>(21) 3048-8497</span></i>
-                <i class="bi bi-phone d-flex"><span>(21) 964236488</span></i>
-                <i class="bi bi-phone d-flex"><span>(21) 964236466</span></i>
-            </div>
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between" style="margin-left: 16rem !important;">
+            <nav id="navbar-contact" class="navbar order-last order-lg-0" >
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#"><i class="bi bi-telephone d-flex" style="padding-top:1px !important"></i>&nbsp;(21) 3048-8497</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="bi bi-phone d-flex" style="padding-top:1px !important"></i>&nbsp;(21) 964236488</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank"><i class="bi bi-whatsapp d-flex" style="padding-top:1px !important"></i>&nbsp;(21) 964236466</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="bi bi-credit-card d-flex" style="padding-top:1px !important"></i>&nbsp;Aceitamos todos os cartões</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-cente">
+    <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
             <!--<h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>-->
@@ -62,16 +73,16 @@
                     <li><a class="nav-link scrollto active" href="#hero">Empresa</a></li>
                     <li><a class="nav-link scrollto" href="#about">kit Churrasco</a></li>
                     <li><a class="nav-link scrollto" href="#menu">Buffet de Churrasco</a></li>
-                    <li><a class="nav-link scrollto" href="#specials">Buffet de Feijoada</a></li>
-                    <li><a class="nav-link scrollto" href="#specials">Buffet de Caldos</a></li>
-                    <li><a class="nav-link scrollto" href="#specials">Buffet de Café da Manhã</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Buffet de Feijoada</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Buffet de Caldos</a></li>
+                    <li><a class="nav-link scrollto" href="#menu">Buffet de Café da Manhã</a></li>
                     <li><a class="nav-link scrollto" href="#events">Eventos</a></li>
                     <li><a class="nav-link scrollto" href="#gallery">Galeria</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
-            <a href="#contact" class="book-a-table-btn scrollto d-none d-lg-flex">Reserva</a>
+            <a href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank" class="book-a-table-btn scrollto d-none d-lg-flex">WhatsApp</a>
 
         </div>
     </header><!-- End Header -->
@@ -85,7 +96,7 @@
 
                     <div class="btns">
                         <a href="#menu" class="btn-menu animated fadeInUp scrollto">Nossas opções</a>
-                        <a href="#contact" class="btn-book animated fadeInUp scrollto">Faça sua Reserva</a>
+                        <a href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank" class="btn-book animated fadeInUp scrollto">WhatsApp</a>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
@@ -194,8 +205,10 @@
 
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-6 menu-item filter-churrasco">
-                        <img src="assets/img/menu/churrasco.jpg" class="menu-img" alt="">
+                    <div class="col-lg-3 menu-item filter-churrasco">
+                        <a href="assets/img/menu/churrasco.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="assets/img/menu/churrasco.jpg" class="menu-img" alt="">
+                        </a>
                         <div class="menu-content">
                             <a href="#">Churrasco</a><span></span>
                         </div>
@@ -206,8 +219,10 @@
                             -->
                     </div>
 
-                    <div class="col-lg-6 menu-item filter-feijoada">
-                        <img src="assets/img/menu/feijoada.jpeg" class="menu-img" alt="">
+                    <div class="col-lg-3 menu-item filter-feijoada">
+                        <a href="assets/img/menu/feijoada.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="assets/img/menu/feijoada.jpeg" class="menu-img" alt="">
+                        </a>
                         <div class="menu-content">
                             <a href="#">Feijoada</a><span></span>
                         </div>
@@ -218,8 +233,10 @@
                             -->
                     </div>
 
-                    <div class="col-lg-6 menu-item filter-caldos">
-                        <img src="assets/img/menu/caldos.jpeg" class="menu-img" alt="">
+                    <div class="col-lg-3 menu-item filter-caldos">
+                        <a href="assets/img/menu/caldos.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="assets/img/menu/caldos.jpeg" class="menu-img" alt="">
+                        </a>
                         <div class="menu-content">
                             <a href="#">Caldos</a><span></span>
                         </div>
@@ -230,8 +247,10 @@
                             -->
                     </div>
 
-                    <div class="col-lg-6 menu-item filter-cafe">
-                        <img src="assets/img/menu/cafe.jpeg" class="menu-img" alt="">
+                    <div class="col-lg-3 menu-item filter-cafe">
+                        <a href="assets/img/menu/cafe.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                            <img src="assets/img/menu/cafe.jpeg" class="menu-img" alt="">
+                        </a>
                         <div class="menu-content">
                             <a href="#">Café da manhã</a><span></span>
                         </div>
@@ -722,7 +741,7 @@
                             </div>
 
                             <div class="phone">
-                                <i class="bi bi-phone"></i>
+                                <i class="bi bi-telephone"></i>
                                 <h4>Telefone</h4>
                                 <p>(21) 3048-8497</p>
                             </div>
@@ -734,9 +753,9 @@
                             </div>
 
                             <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>WhatsApp</h4>
-                                <p>(21) 96423-6488</p>
+                                <a style="color: #FFFFFF" href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                                <a style="font-size : 18px; font-weight: 500; margin-bottom: 5px; font-family: 'Poppins', sans-serif; color: #FFFFFF" href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank" class="whatsapp"><h4>WhatsApp</h4></a>
+                                <a style="padding-left: 16px; font-size: 14px; color: #bab3a6;" href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank" class="whatsapp">(21) 96423-6488</a>
                             </div>
                         </div>
 
@@ -788,7 +807,7 @@
                                 Bangu, Rio de Janeiro <br>
                                 <strong>Telefone:</strong> (21) 3048-8497<br>
                                 <strong>Celular:</strong> (21) 96423-6466<br>
-                                <strong>WhatsApp:</strong> (21) 96423-6488<br>
+                                <strong>WhatsApp:</strong> <a style="color: #FFFFFF" href="https://api.whatsapp.com/send?phone=5521964236488&text=Olá%20Buffet%20Na%20Brasa%20Espetinhos,%20pode%20me%20ajudar?" target="_blank">(21) 96423-6488</a><br>
                                 <strong>Email:</strong> buffetnabrasaespetinhos@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
